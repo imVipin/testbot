@@ -91,7 +91,9 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('🔎 Search another Pdf', switch_inline_query_current_chat=query)
+        ],[
+            InlineKeyboardButton('🔖 Join our PDF Channel', url='https://t.me/pdfmalayalam')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
