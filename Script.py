@@ -20,7 +20,7 @@ Hᴇʀᴇ ɪs ᴛʜᴇ Hᴇʟᴘ ᴏғ ᴍʏ Cᴏᴍᴍᴀɴᴅs"""
 
 👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href="https://t.me/vipinpkd">﹏✍➳ᴹᴿ᭄۷ıͥ℘ıͣŋͫ ℘ƙɖ࿐ 🇮🇳 </a>
 
-💡 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : ᴄʟɪᴄᴋ ʜᴇʀᴇ
+💡 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : <a href="https://t.me/nokiyirunnoippokitum">ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 
 👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href="https://t.me/OnlineStoryLovers"> ᴏɴʟɪɴᴇ sᴛᴏʀʏ ʟᴏᴠᴇʀs</a>
 
@@ -89,7 +89,7 @@ these are the extra features of Me 👮
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
 • /info  - <code>get information about a user.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+"""
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
@@ -107,11 +107,17 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """<b>--> Total Files</b> : <code>{}</code>
-<b>--> Total Users</b> : <code>{}</code>
-<b>--> Total Chats</b> : <code>{}</code>
-<b>--> Used Storage</b> : <code>{}</code> MIB
-<b>--> Free Storage</b> : <code>{}</code> MIB"""
+    STATUS_TXT = """<b>📚 Total PDF Files</b> : <code>{}</code>
+    
+<b>👤 Total Users</b> : <code>{}</code>
+
+<b>👩‍💻 Total Chats</b> : <code>{}</code>
+
+<b>📊 Used Storage</b> : <code>{}</code> MIB
+
+<b>🆓 Free Storage</b> : <code>{}</code> MIB
+
+© <b>@FindPDFbot</b>"""
  
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
