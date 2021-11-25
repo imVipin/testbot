@@ -98,7 +98,6 @@
         }
     },
     "addons": [],
-    "stack": "heroku-20",
     "buildpacks": [{
         "url": "heroku/python"
     }],
@@ -107,5 +106,6 @@
             "quantity": 1,
             "size": "free"
         }
-    }
+    },
+    "stack": "heroku-20"
 }
