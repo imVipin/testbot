@@ -39,7 +39,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search PDF', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍 Search PDF File', switch_inline_query_current_chat='')
             #InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam')
             ],[
             InlineKeyboardButton('🗒️ Our Group', url='https://t.me/OnlineStoryLovers'),
