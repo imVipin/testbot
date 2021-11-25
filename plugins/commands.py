@@ -39,12 +39,13 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search PDF', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam')
+            InlineKeyboardButton('🔍 Search PDF', switch_inline_query_current_chat='')
+            #InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam')
             ],[
-            InlineKeyboardButton('🗒️ Group', url='https://t.me/OnlineStoryLovers'),
+            InlineKeyboardButton('🗒️ Our Group', url='https://t.me/OnlineStoryLovers'),
             InlineKeyboardButton('📚 pdfonly chnl', url='https://t.me/scpdfs')
             ],[
+            InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam'),
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('👤 About', callback_data='about')
         ]]
@@ -65,7 +66,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "Join my Updates Channel", url=invite_link.invite_link
+                    "Join my PDF Channel", url=invite_link.invite_link
                 )
             ]
         ]
@@ -83,12 +84,13 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search PDF', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam')
+            InlineKeyboardButton('🔍 Search PDF File', switch_inline_query_current_chat='')
+            #InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam')
             ],[
-            InlineKeyboardButton('🗒️ Group', url='https://t.me/OnlineStoryLovers'),
+            InlineKeyboardButton('🗒️ Our Group', url='https://t.me/OnlineStoryLovers'),
             InlineKeyboardButton('📚 pdfonly chnl', url='https://t.me/scpdfs')
             ],[
+            InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam'),   
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('👤 About', callback_data='about')
         ]]
