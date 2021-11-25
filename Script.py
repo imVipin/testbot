@@ -1,6 +1,11 @@
 class script(object):
     START_TXT = """hiya👋 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
+i am <a href=https://t.me/{}>{}</a>, <i>Iam A Simple Auto Filter + PDF Search + Manual Filter Bot. I Can Provide Malayalam Pdf stories/Novels In Telegram Groups. You Can Search Any PDFs Via Inline. I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy</i>
+
+നിങ്ങൾക്ക് ഇഷ്ടമുള്ള pdf കൾ ഇനി നിങ്ങളുടെ വിരൽത്തുമ്പിൽ.. 😍😍
+
+<b>Made With ❤ BY @VipinPkd  </b>
+"""
     HELP_TXT = """hey {}
     
 Hᴇʀᴇ ɪs ᴛʜᴇ Hᴇʟᴘ ᴏғ ᴍʏ Cᴏᴍᴍᴀɴᴅs"""
@@ -13,15 +18,15 @@ Hᴇʀᴇ ɪs ᴛʜᴇ Hᴇʟᴘ ᴏғ ᴍʏ Cᴏᴍᴍᴀɴᴅs"""
 
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ
 
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : ﹏✍➳ᴹᴿ᭄۷ıͥ℘ıͣŋͫ ℘ƙɖ࿐ 🇮🇳
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href="https://t.me/vipinpkd">﹏✍➳ᴹᴿ᭄۷ıͥ℘ıͣŋͫ ℘ƙɖ࿐ 🇮🇳 </a>
 
 💡 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : ᴄʟɪᴄᴋ ʜᴇʀᴇ
 
-👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : [ᴏɴʟɪɴᴇ sᴛᴏʀʏ ʟᴏᴠᴇʀs](https://t.me/OnlineStoryLovers)
+👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href="https://t.me/OnlineStoryLovers"> ᴏɴʟɪɴᴇ sᴛᴏʀʏ ʟᴏᴠᴇʀs</a>
 
-📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : [ᴘᴅғᴍᴀʟᴀʏᴀʟᴀᴍ](https://t.me/pdfmalayalam)
+📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href="https://t.me/pdfmalayalam">ᴘᴅғᴍᴀʟᴀʏᴀʟᴀᴍ</a>
 
-📚 ᴘᴅғ ᴏɴʟʏ ᴄʜᴀɴɴᴇʟ : [sᴄ ᴘᴅғs](https://t.me/scpdfs)
+📚 ᴘᴅғ ᴏɴʟʏ ᴄʜᴀɴɴᴇʟ : <a href="https://t.me/scpdfs">sᴄ ᴘᴅғs</a>
 """
     SOURCE_TXT = """<b>NOTE:</b>
 - modified version,for private use. 
@@ -102,11 +107,12 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
+    STATUS_TXT = """<b>--> Total Files</b> : <code>{}</code>
+<b>--> Total Users</b> : <code>{}</code>
+<b>--> Total Chats</b> : <code>{}</code>
+<b>--> Used Storage</b> : <code>{}</code> MIB
+<b>--> Free Storage</b> : <code>{}</code> MIB"""
+ 
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
