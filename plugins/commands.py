@@ -76,7 +76,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My pdf Channel to use this Bot!**",
+            text="**Please Join My pdf Channel to use this Bot!** \n\n Bot ഉപയോഗിക്കാൻ താഴെ കാണുന്ന ചാനലിൽ join ചെയ്യുക.👇",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
