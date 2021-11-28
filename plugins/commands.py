@@ -90,7 +90,7 @@ async def start(client, message):
             #InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam')
             ],[
             InlineKeyboardButton('🗒️ Main Channel', url='https://t.me/pdfmalayalam'),
-            InlineKeyboardButton('📚 pdfonly chnl', url='https://t.me/scpdfs')
+            InlineKeyboardButton('📚 PDFonly chnl', url='https://t.me/scpdfs')
             ],[
             InlineKeyboardButton('📝 Group', url='https://t.me/onlinestorylovers'),   
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
