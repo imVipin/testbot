@@ -1,8 +1,8 @@
 class script(object):
     START_TXT = """hiya👋 {},
 i am <a href=https://t.me/{}>{}</a>,
-<i>A Simple Auto Filter + PDF Search + Manual Filter Bot.
-I Can Provide Malayalam Pdf stories/Novels In Telegram Groups. You Can Search Any PDFs Via Inline. I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy</i>
+
+<i>I Can Provide Malayalam, English Pdf stories/Novels In Telegram Groups. You Can Search Any PDFs Via Inline. I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy</i>
 
 നിങ്ങൾക്ക് ഇഷ്ടമുള്ള pdf കൾ ഇനി നിങ്ങളുടെ വിരൽത്തുമ്പിൽ.. 😍😍
 
