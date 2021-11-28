@@ -433,14 +433,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton ('how to use me🤔', url='https://telegram.me/pdfmalayalam/5707'),
+            InlineKeyboardButton('➕ Add Me ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search PDF file', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🗒️ Our Group', url='https://t.me/OnlineStoryLovers'),
+            InlineKeyboardButton('🗒️ Main Channel', url='https://t.me/pdfmalayalam'),
             InlineKeyboardButton('📚 pdfonly chnl', url='https://t.me/scpdfs')
             ],[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/pdfmalayalam'),
+            InlineKeyboardButton('📚 Group', url='https://t.me/onlinestorylovers'),
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('👤 About', callback_data='about')
         ]]
