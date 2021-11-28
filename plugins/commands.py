@@ -37,16 +37,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('How to Use me', url='https://telegram.me/pdfmalayalam/5707'),
+            InlineKeyboardButton('How to Use me🤔', url='https://telegram.me/pdfmalayalam/5707'),
             InlineKeyboardButton('➕ Add Me ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search PDF File', switch_inline_query_current_chat='')
             #InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam')
             ],[
-            InlineKeyboardButton('🗒️ Our Group', url='https://t.me/OnlineStoryLovers'),
+            InlineKeyboardButton('🗒️ Main Channel', url='https://t.me/pdfmalayalam'),
             InlineKeyboardButton('📚 pdfonly chnl', url='https://t.me/scpdfs')
             ],[
-            InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam'),
+            InlineKeyboardButton('📝 Group', url='https://t.me/onlinestorylovers'),
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('👤 About', callback_data='about')
         ]]
@@ -83,16 +83,16 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('How to Use me', url='https://telegram.me/pdfmalayalam/5707'),
+            InlineKeyboardButton('How to Use me🤔', url='https://telegram.me/pdfmalayalam/5707'),
             InlineKeyboardButton('➕ Add Me  ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search PDF File', switch_inline_query_current_chat='')
             #InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam')
             ],[
-            InlineKeyboardButton('🗒️ Our Group', url='https://t.me/OnlineStoryLovers'),
+            InlineKeyboardButton('🗒️ Main Channel', url='https://t.me/pdfmalayalam'),
             InlineKeyboardButton('📚 pdfonly chnl', url='https://t.me/scpdfs')
             ],[
-            InlineKeyboardButton('📝 Updates', url='https://t.me/pdfmalayalam'),   
+            InlineKeyboardButton('📝 Group', url='https://t.me/onlinestorylovers'),   
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('👤 About', callback_data='about')
         ]]
