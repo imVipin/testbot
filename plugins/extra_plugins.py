@@ -11,7 +11,7 @@ UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "pdfmalayalam")
 
 @Client.on_message(filters.command(["telegraph"]))
 async def uploadphoto(client, message):
-    if update.reply_to_message is not None:
+    if message.reply_to_message is not None:
       msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
       userid = str(message.chat.id)
       img_path = (f"./DOWNLOADS/{userid}.jpg")
@@ -25,6 +25,6 @@ async def uploadphoto(client, message):
         await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
         os.remove(img_path) 	
     else:
-      await bot.send_message(text="reply  with photo image")
+      await client.send_message(text="reply  with photo image")
             
 
