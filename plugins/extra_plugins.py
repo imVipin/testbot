@@ -22,21 +22,7 @@ async def uploadphoto(client, message):
         except:
           await msg.edit_text("`Something went wrong`") 
         else:
-          text=f"**Link :-** `https://telegra.ph{tlink[0]}`\n\n**Other BotZ :-** @MyBotZlist"
-          reply_markup=InlineKeyboardMarkup(
-              [[
-                InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{tlink[0]}"),
-                InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{tlink[0]}")
-              ],[
-                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/MyTestBotZ")
-              ]]
-          )
-          await msg.edit_text(
-              text=text,
-              disable_web_page_preview=True,
-              reply_markup=reply_markup
-          )
-    #await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
+          await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
           os.remove(img_path) 
 	
     else:
