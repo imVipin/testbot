@@ -9,7 +9,7 @@ from telegraph import upload_file
 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "pdfmalayalam")
 
-@Client.on_message(filters.photo & filters.command(["telegraph"]))
+@Client.on_message(filters.command(["telegraph"]))
 async def uploadphoto(client, message):
   msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
   userid = str(message.chat.id)
@@ -70,6 +70,7 @@ async def telegraph_upload(bot, update):
         text="<code>Downloading to My Server ...</code>",
         disable_web_page_preview=True
     )
+
     await bot.download_media(
         message=update,
         file_name=medianame
