@@ -11,36 +11,37 @@ UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "pdfmalayalam")
 
 @Client.on_message(filters.command(["telegraph"]))
 async def uploadphoto(client, message):
-  msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
-  userid = str(message.chat.id)
-  img_path = (f"./DOWNLOADS/{userid}.jpg")
-  img_path = await client.download_media(message=message, file_name=img_path)
-  await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
-  try:
-    tlink = upload_file(img_path)
-  except:
-    await msg.edit_text("`Something went wrong`") 
-  else:
-    text=f"**Link :-** `https://telegra.ph{tlink[0]}`\n\n**Other BotZ :-** @MyBotZlist"
-    reply_markup=InlineKeyboardMarkup(
-        [
-            [
+    if update.reply_to_message is not None:
+	msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
+        userid = str(message.chat.id)
+        img_path = (f"./DOWNLOADS/{userid}.jpg")
+        img_path = await client.download_media(message=message, file_name=img_path)
+        await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
+        try:
+          tlink = upload_file(img_path)
+        except:
+          await msg.edit_text("`Something went wrong`") 
+        else:
+          text=f"**Link :-** `https://telegra.ph{tlink[0]}`\n\n**Other BotZ :-** @MyBotZlist"
+          reply_markup=InlineKeyboardMarkup(
+              [[
                 InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{tlink[0]}"),
                 InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{tlink[0]}")
-            ],
-            [
+              ],[
                 InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/MyTestBotZ")
-            ]
-        ]
-    )
-    await msg.edit_text(
-        text=text,
-        disable_web_page_preview=True,
-        reply_markup=reply_markup
-    )
+              ]]
+          )
+          await msg.edit_text(
+              text=text,
+              disable_web_page_preview=True,
+              reply_markup=reply_markup
+          )
     #await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
-    os.remove(img_path)
-
+          os.remove(img_path) 
+	
+    else:
+	await bot.send_message(text="reply  with photo")
+            
 
 
 @Client.on_message(filters.command(["telegraph2"]))
