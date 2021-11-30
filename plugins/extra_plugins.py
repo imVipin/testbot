@@ -9,7 +9,7 @@ from telegraph import upload_file
 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "pdfmalayalam")
 
-@Client.on_message(filters.command(["info"]))
+@Client.on_message(filters.command(["telegraph"]))
 async def telegraph_upload(bot, update):
     #if not await db.is_user_exist(update.from_user.id):
 	    #await db.add_user(update.from_user.id)
