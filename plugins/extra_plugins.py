@@ -23,9 +23,8 @@ async def uploadphoto(client, message):
         await msg.edit_text("`Something went wrong`") 
       else:
         await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
-        os.remove(img_path) 
-	
+        os.remove(img_path) 	
     else:
-	await bot.send_message(text="reply  with photo")
+      await bot.send_message(text="reply  with photo image")
             
 
