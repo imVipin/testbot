@@ -2,7 +2,7 @@ import os
 import shutil
 from pyrogram import Client, filters
 from telegraph import upload_file 
-import sudo_filter
+#import sudo_filter
 from pyrogram.types import Message
 from pyrogram.types.messages_and_media import message
 
