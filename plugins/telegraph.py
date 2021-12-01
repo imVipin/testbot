@@ -6,6 +6,7 @@ from telegraph import upload_file
 from pyrogram.types import Message
 from pyrogram.types.messages_and_media import message
 
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 def get_file_id(msg: Message):
     if msg.media:
@@ -55,9 +56,15 @@ async def telegraph(client, message):
     except Exception as document:
         await message.reply_text(message, text=document)
     else:
+        buttons = [[
+                InlineKeyboardButton('🔗 Telegraph Link', url=f'https://telegra.ph{response[0]}')
+            ]]
+        reply_markup=InlineKeyboardMarkup(buttons)
+         
         await message.reply(
-            f"https://telegra.ph{response[0]}",
-            disable_web_page_preview=True
+            f"`https://telegra.ph{response[0]}`",
+            disable_web_page_preview=True,
+            reply_markup=reply_markup
         )
     finally:
         shutil.rmtree(
