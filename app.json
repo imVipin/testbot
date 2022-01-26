@@ -20,34 +20,42 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
+            "value": "2115274353:AAFDUD-Q6EgWjt4qMNLcfDPUphiow__P4XA",
             "required": true
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
+            "value": "6",
             "required": true
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
+            "value": "eb06d4abfb49dc3eeb1aeb98ae0f581e",
             "required": true
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "value": "-1001368430615 -1001609495163",
             "required": false
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "value": "682909041 313753983 1248974748",
             "required": true
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
+            "value": "https://telegra.ph/file/39a965c60d7192e1c66a7.jpg https://telegra.ph/file/cc20c354c1f8cb0523981.jpg",
             "required": false
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "value": "-1001529292644",
             "required": true
         },
         "SUPPORT_CHAT": {
             "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
+            "value": "onlinestorylovers",
             "required": false
         },
         "AUTH_USERS": {
@@ -56,6 +64,7 @@
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value": "-1001368430615"
             "required": false
         },   
         "USE_CAPTION_FILTER": {
@@ -68,15 +77,17 @@
         },
         "DATABASE_URI": {
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "value": "mongodb+srv://findpdf:findpdf@cluster0.w80nd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
             "required": true
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "value": "pdfmalayalam",
             "required": false
         },
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
-            "value": "Telegram_files",
+            "value": "pdfmalayalam",
             "required": false
         },
         "CACHE_TIME": {
